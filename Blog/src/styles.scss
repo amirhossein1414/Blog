@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+// correction when using direction rtl
+label{
+  display: inline-block;
+}
+
+/* body{
+  direction: rtl;
+} */

@@ -1,0 +1,13 @@
+<div class="top-menu">
+  <div class="control">
+    <label>
+      <input type="radio" name="viewmode" id="mobile" [value]="'mobile'" [(ngModel)]="viewMode">
+      <span>Mobile Mode</span>
+    </label>
+    <app-space [widthPx]="20"></app-space>
+    <label>
+        <input type="radio" name="viewmode" id="desktop" [value]="'desktop'" [(ngModel)]="viewMode">
+        <span>Desktop Mode</span>
+      </label>
+  </div>
+</div>
