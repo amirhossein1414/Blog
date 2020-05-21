@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { SpaceComponent } from './space/space.component';
+import { BaseComponentsModule } from 'projects/base-components/src/public-api';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SpaceComponent } from './space/space.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BaseComponentsModule
   ],
   providers: [],
   entryComponents: [MainMenuComponent],
