@@ -1,28 +1,21 @@
-<div class="top-menu">
-  <div class="control">
-    <label>
-      <input
-        type="radio"
-        name="viewmode"
-        id="mobile"
-        [value]="'mobile'"
-        [(ngModel)]="viewMode"
-      />
-      <span>Mobile Mode</span>
-    </label>
-    <app-space [widthPx]="20"></app-space>
-    <label>
-      <input
-        type="radio"
-        name="viewmode"
-        id="desktop"
-        [value]="'desktop'"
-        [(ngModel)]="viewMode"
-      />
-      <span>Desktop Mode</span>
-    </label>
-  </div>
+<div class="container">
+  <div class="top-menu">
+    <div class="control">
+      <label>
+        <input type="radio" name="viewmode" id="mobile" [value]="'mobile'" [(ngModel)]="viewMode" />
+        <span>Mobile</span>
+      </label>
+      <app-space [widthPx]="20"></app-space>
+      <label>
+        <input type="radio" name="viewmode" id="desktop" [value]="'desktop'" [(ngModel)]="viewMode" />
+        <span>Desktop</span>
+      </label>
+    </div>
 </div>
-<div>
-  <base-button></base-button>
+
+  <div class="content-container" [style.width]="width" [style.height]="height">
+    <ng-content>
+
+    </ng-content>
+  </div>
 </div>

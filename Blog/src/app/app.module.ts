@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { SpaceComponent } from './space/space.component';
 import { BaseComponentsModule } from 'projects/base-components/src/public-api';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,10 @@ import { BaseComponentsModule } from 'projects/base-components/src/public-api';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BaseComponentsModule
+    BaseComponentsModule,
   ],
   providers: [],
-  entryComponents: [MainMenuComponent],
-  bootstrap: [MainMenuComponent]
+  entryComponents: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
