@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { SpaceComponent } from './space/space.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { AngularMaterialModule } from './space/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    AngularFontAwesomeModule
+    AngularMaterialModule
   ],
   providers: [],
   entryComponents: [AppComponent],
