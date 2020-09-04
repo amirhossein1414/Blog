@@ -1,6 +1,11 @@
 <app-main-menu>
   <!-- <i class="fa fa-user" aria-hidden="true"></i>
   <i class="fa fa-lock" aria-hidden="true"></i> -->
-  <app-input [placeholder]="'placewhoslder'" [value]="'value'" [label]="'label'">
-  </app-input>
+  <!-- <app-input [placeholder]="'placewhoslder'" [value]="'value'" [label]="'label'">
+  </app-input> -->
+  <div class="top-menu">
+    <a [routerLink]="['/login']" routerLinkActive="active">login</a>
+    <a [routerLink]="['/']" routerLinkActive="home">home</a>
+  </div>
+  <router-outlet></router-outlet>
 </app-main-menu>

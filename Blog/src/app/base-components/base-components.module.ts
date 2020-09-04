@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { InputComponent } from './app-input/app-input.component';
-import { AngularMaterialModule } from '../space/angular-material.module';
+import { AngularMaterialModule } from './angular-material.module';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
